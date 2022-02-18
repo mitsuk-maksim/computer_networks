@@ -39,19 +39,19 @@
   font-size: 24px;
 }
 
-.about__bg {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  z-index: -1;
-  background-image: url(./img/react.jpeg);
-  background-position: center;
-  background-size: cover;
-  background-attachment: fixed;
-  filter: brightness(0.3);
-}
+/*.about__bg {*/
+/*  position: absolute;*/
+/*  top: 0;*/
+/*  left: 0;*/
+/*  right: 0;*/
+/*  bottom: 0;*/
+/*  z-index: -1;*/
+/*  background-image: url(./img/react.jpeg);*/
+/*  background-position: center;*/
+/*  background-size: cover;*/
+/*  background-attachment: fixed;*/
+/*  filter: brightness(0.3);*/
+/*}*/
 
 .portfolio {
   padding: 40px 0;
@@ -83,4 +83,49 @@
   text-align: center;
   font-size: 16px;
   font-weight: bold;
+}
+
+
+.b-marquee {
+  font-family: 'Segoe UI', sans-serif;
+  white-space: nowrap;
+  overflow: hidden;
+  background: #333;
+  color: #fff;
+  padding: 10px;
+  position: relative;
+  margin-bottom: 10px;
+}
+
+.b-marquee__text {
+  /*margin-bottom:200px;*/
+  position:relative;
+  width: 50%;
+  font-size:26px;
+  text-align: center;
+  /*color:white;*/
+  border-radius:4px;
+  /*padding:20px;*/
+  /*box-shadow: 0 0 10px rgba(0,0,0,0.5);*/
+  height: 100px;
+  /*background: red;*/
+  -webkit-animation: animMarquee 5s linear infinite;
+  animation: animMarquee 5s linear infinite;
+  animation-direction: alternate-reverse;
+}
+
+
+@keyframes animMarquee {
+  0% {
+    background: cadetblue;
+    transform: translateX(0);
+  }
+  50% {
+    background: darkolivegreen;
+    transform: translateX(50%);
+  }
+  100% {
+    background: darkcyan;
+    transform: translateX(100%);
+  }
 }

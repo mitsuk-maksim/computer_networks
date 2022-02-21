@@ -6,6 +6,7 @@ import {Header} from './components/Header/Header';
 import {Route, Routes} from 'react-router-dom';
 import HomePage from './pages/home';
 import LabPage from './pages/lab';
+import 'antd/dist/antd.css';
 
 class App extends React.Component {
     render() {

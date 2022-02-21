@@ -5,11 +5,7 @@ import {NameForm} from "../../components/Form";
 
 
 export function Lab10_1() {
-    function handleSubmit(e) {
-        // e.preventDefault();
-        console.log('Отправлена форма.');
-    }
-
+    // alert('yep');
     return (
         <div>
             Часы:
@@ -17,13 +13,7 @@ export function Lab10_1() {
             Календарь
             <Calendar/>
 
-            {/*<form onSubmit={handleSubmit}>*/}
-            {/*    <button type="submit">Отправить</button>*/}
-            {/*</form>*/}
-            {/*<button onClick={handleSubmit}>*/}
-
-            {/*</button>*/}
-            <NameForm></NameForm>
+            <NameForm/>
 
             <div className='b-marquee'>
                 Реклама

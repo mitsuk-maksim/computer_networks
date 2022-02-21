@@ -1,6 +1,6 @@
 import Clock from "../../components/Clock";
 import {Calendar} from "../../components/Calendar";
-import {NameForm} from "../../components/Form";
+import {NameForm} from "../../components/Forms/Form";
 
 
 

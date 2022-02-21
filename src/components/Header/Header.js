@@ -5,7 +5,8 @@ export function Header(props) {
         <header className='header'>
             <div className='container'>
                 <div className='header-brand'>
-                    {props.brand}
+                    {props.brand} <br/>
+                    {props.children}
                 </div>
             </div>
         </header>

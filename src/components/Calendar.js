@@ -1,18 +1,10 @@
-import React, {Component, useEffect, useState} from 'react';
+import React from 'react';
 
 export function Calendar() {
-    const [calendarState, setCalendarState] = useState();
-
-    useEffect(() => {
-        setInterval(() => {
-            const date = new Date();
-            setCalendarState(date.toLocaleDateString());
-        }, 1000)
-    }, [])
 
     return (
         <div>
-            {calendarState}
+            {new Date().toLocaleDateString()}
         </div>
     );
 }

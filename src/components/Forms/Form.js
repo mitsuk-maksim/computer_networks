@@ -1,10 +1,11 @@
 import React from "react";
-import {Button, Form, Input} from "antd";
+import {Button, Form, Input, message} from "antd";
 
 export function NameForm() {
     const onFinish = (values) => {
         console.log('Success:', values);
-        alert('Очень приятно, ' + values.username);
+        message.info('Очень приятно, ' + values.username);
+        // alert('Очень приятно, ' + values.username);
     };
 
     const onFinishFailed = (errorInfo) => {

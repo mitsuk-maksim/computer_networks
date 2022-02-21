@@ -1,5 +1,4 @@
 import {Header} from "../../components/Header/Header";
-import {About} from "../../components/About/About";
 import '../../index.css';
 import React from "react";
 import {Link} from "react-router-dom";

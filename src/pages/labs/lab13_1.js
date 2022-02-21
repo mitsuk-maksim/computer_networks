@@ -1,7 +1,11 @@
+import {TestForm} from "../../components/Forms/TestForm";
+import {Timer} from "../../components/Timer";
+
 export function Lab13_1() {
     return (
         <div>
-            lab 1
+            <TestForm/>
+            <Timer seconds={25} />
         </div>
     )
 }

@@ -26,11 +26,11 @@ export function TestForm() {
             wrapperCol={{
                 span: 10,
             }}
-            labelCol={{span: 2}}
+            labelCol={{span: 3}}
             initialValues={{
                 remember: true,
             }}
-
+            labelAlign='right'
             onFinish={openNotification}
             onFinishFailed={onFinishFailed}
             autoComplete="off"
